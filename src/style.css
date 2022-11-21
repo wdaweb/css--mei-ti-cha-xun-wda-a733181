@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.container {
+  padding: 30px;
+}
+
+.big-logo {
+  width: 200px;
+}
+
+.small-logo {
+  width: 200px;
+}
+
+.item {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.show-pc {
+  margin: 20px 0;
+  font-size: 20px;
+  display: none;
+}
+
+.show-phone {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.border-none {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    padding: 0;
+  }
+  .small-logo {
+    width: 100px;
+  }
+  .item {
+    border-bottom: none;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .show-pc {
+    display: block;
+  }
+  .show-phone {
+    display: none;
+  }
+  .html {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .css {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+  }
+  .js {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+  }
+  .jquery {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+  }
+  .bs {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+  }
+  .sass {
+    position: absolute;
+    right: 13%;
+    top: 32%;
+  }
+  .vue {
+    position: absolute;
+    right: 18%;
+    bottom: 15%;
+  }
+}
+
+@media (min-width: 1850px) {
+  .html::before {
+    content: '';
+    position: absolute;
+    width: 493px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(196deg);
+    top: 93%;
+    left: 95%;
+  }
+  .css::before {
+    content: '';
+    position: absolute;
+    width: 208px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(221deg);
+    top: 84%;
+    left: 78%;
+  }
+  .js::before {
+    content: '';
+    position: absolute;
+    width: 385px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(177deg);
+    top: 32%;
+    left: 91%;
+  }
+  .jquery::before {
+    content: '';
+    position: absolute;
+    width: 226px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(155deg);
+    bottom: 111%;
+    left: 76%;
+  }
+  .bs::before {
+    content: '';
+    position: absolute;
+    width: 349px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(154deg);
+    right: 100%;
+    top: 129%;
+  }
+  .sass::before {
+    content: '';
+    position: absolute;
+    width: 440px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(174deg);
+    right: 93%;
+    top: 74%;
+  }
+  .vue::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 0;
+    border: 1px solid #999;
+    transform: rotate(203deg);
+    right: 78%;
+    bottom: 111%;
+  }
+}
